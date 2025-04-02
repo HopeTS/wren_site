@@ -6,7 +6,7 @@ import * as P from "@pages";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/wren_site">
       <nav></nav>
       <Routes>
         <Route path="/" exact element={<P.Home />} />
