@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wren_site/static/css/main.64c4c6bd.css",
+    "main.js": "/wren_site/static/js/main.9703a414.js",
+    "index.html": "/wren_site/index.html",
+    "main.64c4c6bd.css.map": "/wren_site/static/css/main.64c4c6bd.css.map",
+    "main.9703a414.js.map": "/wren_site/static/js/main.9703a414.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64c4c6bd.css",
+    "static/js/main.9703a414.js"
+  ]
+}
