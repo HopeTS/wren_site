@@ -1,10 +1,11 @@
+import styles from "./index.module.css";
 import * as C from "@components";
 
 export const Home = () => {
   return (
-    <C.Page>
+    <C.Page className={styles.Home}>
       <C.OuterContent>
-        <C.InnerContent>
+        <C.InnerContent className={styles.Home_top}>
           <p>
             Just about every Thursday I host a show called <b>Basin Currents</b>
             . I discuss national and local politics with an emphasis on labor,

@@ -1,6 +1,13 @@
+:root {
+  --color-primary-dark: #3b82f6;
+  --color-secondary-dark: #f59e0b;
+  --color-background-dark: #0f172a;
+  --color-text-dark: #f8fafc;
+}
+
 [data-theme="dark"] {
-  --color-primary: #3b82f6;
-  --color-secondary: #f59e0b;
-  --color-background: #0f172a;
-  --color-text: #f8fafc;
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
 }

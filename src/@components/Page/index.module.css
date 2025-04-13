@@ -1,0 +1,5 @@
+.Page {
+  background: var(--color-background);
+  min-height: 100vh;
+  margin: 0;
+}

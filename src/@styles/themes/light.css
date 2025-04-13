@@ -1,6 +1,13 @@
+:root {
+  --color-primary-light: #3b82f6;
+  --color-secondary-light: #f59e0b;
+  --color-background-light: #ffffff;
+  --color-text-light: #111827;
+}
+
 [data-theme="light"] {
-  --color-primary: #3b82f6;
-  --color-secondary: #f59e0b;
-  --color-background: #ffffff;
-  --color-text: #111827;
+  --color-primary: var(--color-primary-light);
+  --color-secondary: var(--color-secondary-light);
+  --color-background: var(--color-background-light);
+  --color-text: var(--color-text-light);
 }

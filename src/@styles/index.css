@@ -1,4 +1,2 @@
-@import "./themes/index.css";
 @import "./base/index.css";
-@import "./components/index.css";
-@import "./pages/index.css";
+@import "./themes/index.css";
