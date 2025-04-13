@@ -5,21 +5,25 @@ import { IMG } from "@assets";
 export const Home = () => {
   return (
     <C.Page className={styles.Home}>
+      {/* Landing Page */}
       <C.OuterContent className={styles.Home_landing_page}>
-        <div className={styles.Home_landing_page_content}>
-          <img
-            className={styles.Home_landing_page_image}
-            src={IMG.WREN_PICTURE}
-            alt="A picture of Wren Carol Shockey smiling at the camera"
-          />
+        <C.NetBackground />
+        <div className={styles.Home_landing_page_content_wrapper}>
+          <div className={styles.Home_landing_page_content}>
+            <img
+              className={styles.Home_landing_page_image}
+              src={IMG.WREN_PICTURE}
+              alt="A picture of Wren Carol Shockey smiling at the camera"
+            />
 
-          <div className={styles.Home_landing_page_top_text_wrapper}>
-            <h1 className={styles.Home_title}>
-              <span>VOTE</span> Wren Carol Shockey
-            </h1>
-            <p className={styles.Home_position}>
-              Transit Service Director 2025
-            </p>
+            <div className={styles.Home_landing_page_top_text_wrapper}>
+              <h1 className={styles.Home_title}>
+                <span>VOTE</span> Wren Carol Shockey
+              </h1>
+              <p className={styles.Home_position}>
+                Transit Service Director 2025
+              </p>
+            </div>
           </div>
         </div>
       </C.OuterContent>

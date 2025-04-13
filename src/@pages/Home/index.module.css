@@ -12,12 +12,28 @@
   position: relative;
 }
 
+.Home_landing_page_content_wrapper {
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Home_landing_page_content {
+  position: absolute;
   margin-top: 2rem;
   width: 100vw;
   overflow: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -38,10 +54,14 @@
 
 .Home_title span {
   color: var(--color-primary);
+  font-size: 5rem;
+  display: block;
+  font-weight: 700;
 }
 
 .Home_position {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .Home_top {
