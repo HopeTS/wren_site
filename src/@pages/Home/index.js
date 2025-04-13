@@ -55,6 +55,7 @@ export const Home = () => {
           </p>
         </C.InnerContent>
       </C.OuterContent>
+      <C.Footer />
     </C.Page>
   );
 };
