@@ -50,6 +50,7 @@
 
 .Home_title {
   text-align: center;
+  color: var(--color-background);
 }
 
 .Home_title span {
@@ -62,6 +63,7 @@
 .Home_position {
   text-align: center;
   font-size: 1.2rem;
+  color: var(--color-background);
 }
 
 .Home_top {
