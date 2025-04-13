@@ -2,6 +2,12 @@ import styles from "./index.module.css";
 import * as C from "@components";
 import { IMG } from "@assets";
 
+const carouselImages = [
+  IMG.WREN_BTS_FUNDING_LETTER,
+  IMG.WREN_IMPROVE_BUSSES_LETTER,
+  IMG.WREN_MY_VISION_LETTER,
+];
+
 export const Home = () => {
   return (
     <C.Page className={styles.Home}>
@@ -36,6 +42,8 @@ export const Home = () => {
             play original songs on guitar. Often I'm raising my voice about
             Social Security or the rich and powerful or our Civil Liberties.
           </p>
+
+          <C.Carousel images={carouselImages} />
 
           <p>
             In a media landscape where every news show is funded by the same
