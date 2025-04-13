@@ -1,13 +1,18 @@
 :root {
+  /* Disable themes for now, uncommented styles from light theme
   --color-primary-dark: salmon;
   --color-secondary-dark: #f59e0b;
   --color-background-dark: #0f172a;
-  --color-text-dark: #f8fafc;
+  --color-text-dark: #f8fafc;*/
+  --color-primary-light: salmon;
+  --color-secondary-light: #f59e0b;
+  --color-background-light: #ffffff;
+  --color-text-light: #111827;
 }
 
 [data-theme="dark"] {
-  --color-primary: var(--color-primary-dark);
-  --color-secondary: var(--color-secondary-dark);
-  --color-background: var(--color-background-dark);
-  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-primary-light);
+  --color-secondary: var(--color-secondary-light);
+  --color-background: var(--color-background-light);
+  --color-text: var(--color-text-light);
 }
