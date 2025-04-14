@@ -39,6 +39,26 @@
   flex-wrap: wrap;
 }
 
+.Home_learn_more {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-text);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.Home_learn_more a {
+  color: var(--color-background);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
 .Home_landing_page_image {
   width: 200px;
   height: auto;

@@ -1,9 +1,8 @@
 :root {
-  /* Disable themes for now, uncommented styles from light theme
   --color-primary-dark: salmon;
   --color-secondary-dark: #f59e0b;
   --color-background-dark: #0f172a;
-  --color-text-dark: #f8fafc;*/
+  --color-text-dark: #f8fafc;
   --color-primary-light: salmon;
   --color-secondary-light: #f59e0b;
   --color-background-light: #ffffff;

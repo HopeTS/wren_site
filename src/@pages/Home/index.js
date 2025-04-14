@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 import styles from "./index.module.css";
 import * as C from "@components";
 import { IMG } from "@assets";
@@ -14,6 +16,7 @@ export const Home = () => {
       {/* Landing Page */}
       <C.OuterContent className={styles.Home_landing_page}>
         <C.NetBackground />
+
         <div className={styles.Home_landing_page_content_wrapper}>
           <div className={styles.Home_landing_page_content}>
             <img
@@ -32,8 +35,14 @@ export const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className={styles.Home_learn_more}>
+          <HashLink to="#top">
+            Learn more <br /> ˅
+          </HashLink>
+        </div>
       </C.OuterContent>
-      <C.OuterContent>
+      <C.OuterContent id="top">
         <C.InnerContent className={styles.Home_top}>
           <p>
             Just about every Thursday I host a show called <b>Basin Currents</b>
