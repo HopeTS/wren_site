@@ -1,4 +1,30 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0.5;
+  }
+  16% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0.5;
+  }
+  32% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .Home {
+}
+
+.Home p {
+  font-size: 1.2rem;
+  padding: 0;
 }
 
 .Home_landing_page {
@@ -50,6 +76,16 @@
   text-decoration: none;
   font-size: 1.2rem;
   z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 600ms ease, visibility 600ms ease;
+  visibility: hidden;
+}
+
+.Home_learn_more[data-showLearnMore="true"] {
+  animation: fadeInOut 5s infinite;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .Home_learn_more a {
@@ -86,6 +122,29 @@
   color: var(--color-background);
 }
 
+.Home_top_transition {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: min(50vw, 500px) solid transparent;
+  border-right: min(50vw, 500px) solid transparent;
+  border-top: min(10vw, 500px) solid var(--color-background-dark);
+}
+
 .Home_top {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.Home_top_header {
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  .Home_top_header {
+    text-align: center;
+  }
+  .Home p {
+    padding: 0px 1.2rem;
+    text-align: center;
+  }
 }

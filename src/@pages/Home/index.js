@@ -1,4 +1,5 @@
 import { HashLink } from "react-router-hash-link";
+import { useState, useEffect } from "react";
 
 import styles from "./index.module.css";
 import * as C from "@components";
@@ -11,6 +12,19 @@ const carouselImages = [
 ];
 
 export const Home = () => {
+  const [showLearnMore, setShowLearnMore] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const shouldShowLearnMore = window.scrollY < window.innerHeight * 0.3;
+      setShowLearnMore(shouldShowLearnMore);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <C.Page className={styles.Home}>
       {/* Landing Page */}
@@ -36,23 +50,21 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className={styles.Home_learn_more}>
+        <div
+          className={styles.Home_learn_more}
+          data-showLearnMore={showLearnMore}
+        >
           <HashLink to="#top">
             Learn more <br /> ˅
           </HashLink>
         </div>
       </C.OuterContent>
       <C.OuterContent id="top">
+        <div className={styles.Home_top_transition} />
         <C.InnerContent className={styles.Home_top}>
-          <p>
-            Just about every Thursday I host a show called <b>Basin Currents</b>
-            . I discuss national and local politics with an emphasis on labor,
-            disability and the environment. Sometimes I play fiddle, sometimes I
-            play original songs on guitar. Often I'm raising my voice about
-            Social Security or the rich and powerful or our Civil Liberties.
-          </p>
-
-          <C.Carousel images={carouselImages} />
+          <C.Header className={styles.Home_top_header}>
+            Why Vote For Me
+          </C.Header>
 
           <p>
             In a media landscape where every news show is funded by the same
@@ -61,6 +73,24 @@ export const Home = () => {
             freedom of speech or the right to life for all people, and I think
             that's sad. I am very opinionated, but I advocate for what I believe
             is right. Hopefully I can be a small part of the solution.
+          </p>
+
+          <C.Header className={styles.Home_top_header}>
+            Proposals and Vision
+          </C.Header>
+
+          <C.Carousel images={carouselImages} />
+
+          <C.Header className={styles.Home_top_header}>
+            A Little About Me
+          </C.Header>
+
+          <p>
+            Just about every Thursday I host a show called <b>Basin Currents</b>
+            . I discuss national and local politics with an emphasis on labor,
+            disability and the environment. Sometimes I play fiddle, sometimes I
+            play original songs on guitar. Often I'm raising my voice about
+            Social Security or the rich and powerful or our Civil Liberties.
           </p>
         </C.InnerContent>
       </C.OuterContent>

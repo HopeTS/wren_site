@@ -28,24 +28,29 @@ const Carousel = ({ images, autoPlay = false, autoPlayInterval = 3000 }) => {
   }, [currentIndex, autoPlay]);
 
   return (
-    <div className={clsx(styles.Carousel)}>
-      <button
-        className={clsx(styles.Carousel_button, styles.prev)}
-        onClick={prevSlide}
-      >
-        ‹
-      </button>
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex}`}
-        className={clsx(styles.Carousel_image)}
-      />
-      <button
-        className={clsx(styles.Carousel_button, styles.next)}
-        onClick={nextSlide}
-      >
-        ›
-      </button>
+    <div className={styles.Carousel}>
+      <div className={styles.Carousel_background} />
+      <div className={styles.Carousel_imageWrapper}>
+        <img
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex}`}
+          className={styles.Carousel_image}
+        />
+      </div>
+      <div className={styles.Carousel_controls}>
+        <button
+          className={clsx(styles.Carousel_button, styles.prev)}
+          onClick={prevSlide}
+        >
+          ‹
+        </button>
+        <button
+          className={clsx(styles.Carousel_button, styles.next)}
+          onClick={nextSlide}
+        >
+          ›
+        </button>
+      </div>
     </div>
   );
 };
