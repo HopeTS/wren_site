@@ -21,7 +21,9 @@ export const NetBackground = () => {
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        scale: 1.0,
+        scale: 1.5,
+        zoom: 1.5,
+        scaleMobile: 1.3,
         backgroundColor: 0x0d1424,
         color: "salmon",
       });
