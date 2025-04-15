@@ -44,7 +44,7 @@ export const Home = () => {
                 <span>VOTE</span> Wren Carol Shockey
               </h1>
               <p className={styles.Home_position}>
-                Transit Service Director 2025
+                BTS Director. May 20th 2025
               </p>
             </div>
           </div>
@@ -63,7 +63,7 @@ export const Home = () => {
         <div className={styles.Home_top_transition} />
         <C.InnerContent className={styles.Home_top}>
           <C.Header className={styles.Home_top_header}>
-            Why Vote For Me
+            Klamath Falls wants Better Busses
           </C.Header>
 
           <p>
